@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Absensi Kelas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>📚 Aplikasi Absensi Kelas</h2>
+
+    <div class="input-group">
+        <input type="text" id="nama" placeholder="Masukkan Nama Siswa">
+        <button onclick="tambahSiswa()">Tambah</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+
+        <tbody id="dataSiswa"></tbody>
+    </table>
+
+    <div class="summary">
+
+        <div class="card hadir">
+            <h3>Hadir</h3>
+            <span id="hadir">0</span>
+        </div>
+
+        <div class="card izin">
+            <h3>Izin</h3>
+            <span id="izin">0</span>
+        </div>
+
+        <div class="card sakit">
+            <h3>Sakit</h3>
+            <span id="sakit">0</span>
+        </div>
+
+        <div class="card alpa">
+            <h3>Alpa</h3>
+            <span id="alpa">0</span>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
